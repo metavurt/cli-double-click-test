@@ -1,3 +1,21 @@
-<h1>
-  {{title}}
-</h1>
+
+
+
+<nav>
+	<img src="assets/images/weo3-logo.png" />
+	<button md-button md-no-ink routerLink="/work" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true }">
+		<md-icon>apps</md-icon>
+		<div class="caption">work</div>
+	</button>
+	<button md-button md-no-ink routerLink="/about" routerLinkActive="active">
+		<md-icon>person</md-icon>
+		<div class="caption">about</div>
+	</button>
+	<button md-button md-no-ink routerLink="/contact" routerLinkActive="active">
+		<md-icon>forum</md-icon>
+		<div class="caption">contact</div>
+	</button>
+</nav>
+
+
+<router-outlet></router-outlet>
